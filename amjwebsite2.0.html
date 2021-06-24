@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AMJWEBSITE</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+    <style>
+      @media only screen and (min-width: 600px) {
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFFAFA;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            
+            
+            
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        nav ul li a{
+             margin: 30px;
+             font-family: sans-serif; 
+             color: black;    
+             text-decoration: none;
+                 }
+
+       body{
+           margin: 0px;
+           overflow-x: hidden;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: black;
+           width: 1360px;
+          
+       }
+       .Section1{
+           background-color:#141414;
+           color: #FFFAFA;
+           
+       }
+       .Section2{
+           background-color: black;
+           max-height: 100%;
+           padding: 60px;
+       }
+       .Section3{
+           background-color: #141414;
+           color: #FFFAFA;
+           padding: 100px;
+           max-height:100%;
+       }
+
+       .Section4{
+            background-color: black;
+            color: white;
+            max-height: 100%;
+            padding: 60px;
+        }
+        .Component1{
+             position: relative;
+             left:10%;
+             top: 100px;
+             
+           
+         }
+
+        .Component2{
+             position: relative;
+             bottom: 145px;
+             left:35%;
+        }
+        .Component4{
+            position: relative;
+            right: 20px;
+            bottom:60px;
+
+            
+        }
+        .Component5{
+            display: flex;
+            position: relative;
+            left: 23%;
+            margin-top: 65px;
+        }
+        
+        .skills{
+             display: flex;
+             position: relative;
+             left:5%;
+             color: #FFFAFA;
+             padding:60px;
+        }
+        .one{
+             padding-left: 110px;
+             padding-right: 110px;
+              }
+        .two{
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        .three{
+            position: relative;
+            padding-left:60px;
+            padding-right: 60px;
+            
+        }
+        .heading1{
+            position: relative;
+            left: 110%;
+        }
+        .heading2{
+            position: relative;
+            left: 45%;
+            bottom: 30px;
+            font-size: 30px;
+            }
+        .heading3{
+            position: relative;
+            left: 45%;
+            bottom: 80%;
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+        .heading4{
+            position: relative;
+            font-size: 30px;
+            right: 25px;
+        }
+        .heading8{
+            position: relative;
+            font-size: 30px;
+            right: 25px;
+
+        }
+        .heading9{
+            position: relative;
+            font-size: 30px;
+            right: 25px;
+
+        }
+        .heading5{
+            font-size: 25px;
+            text-decoration: none;
+            
+        }
+        .heading5:hover{
+            color:grey ;
+
+        }
+        
+        .heading6{
+            position: relative;
+            font-size:30px ;
+            left: 45%;
+        }
+        .topnav{
+            display: none;
+        }
+        .logo{
+            font-family: sans-serif;
+            color: black;
+            font-size: 25px;
+            text-decoration: none;
+            position: relative;
+            left: 15px;
+        }
+        .Profile{
+            height: 220px;
+            width: 220px;
+            border-radius:50%;
+        }
+        .name{
+            position: absolute;
+            left:50px;
+            font-size: 30px;
+          
+
+        }
+        .school{
+            position: absolute;
+            top: 120%;
+            left: 20px;
+            font-size: 20px;
+        }
+        .pydata{
+            position: absolute;
+            top: 160px;
+            left: 135px;
+        }
+        .jsdata{
+            position: absolute;
+            top:160px;
+            left: 40%;
+        }
+        .databasedata{
+            position: absolute;
+            top: 155px;
+            left:70% ;
+        }
+        .projects{
+            position: relative;
+            top: 190px;
+            height: 170px;
+            width: 170px;
+        }
+        .projectdetail1{
+           position: relative;
+           left: 30%;
+           top:1px;
+           padding: 0px;
+        }
+        .projectdetail2{
+            position: relative;
+            left: 30%;
+            top:120px;
+
+        }
+
+        .repostory{
+            height: 10px;
+            width: 10px;
+        }
+        .socialicon:hover{
+            transform: scale(1.2);
+
+        }
+        .repository:hover{
+            transform: scale(1.2);
+
+        }
+        .footer1{
+            color: white; position: relative; left: 45%; font: size 15px;
+
+        }
+        .footer2{
+            color: white; position: relative; left: 40%; font-size: 15px;
+
+        }
+        
+      }
+      @media only screen and (max-width: 600px) {
+        .topnav {
+  overflow: hidden;
+  background-color:#FFFAFA;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  color: #FFFAFA;
+  background:black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color:black;
+  color: #FFFAFA;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color:#FFFAFA;
+  color:white;
+  position: relative;
+  left: 28%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav{display: none;}
+
+.Component1{
+    position: relative;
+    left: 20%;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.Component2{
+    position: relative;
+    left: 5%;
+   padding-bottom: 100px;
+
+}
+
+body{
+    margin: 0px;
+    background-color: black;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.Profile{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+.projects{
+    position: relative;
+    left: 25%;
+    width: 170px;
+    height: 170px;
+}
+.Section1{
+    background-color:#141414;
+    color: #FFFAFA;
+}
+.Section2{
+    background-color: black;
+    color:#FFFAFA ;
+
+}
+.Section3{
+    background-color: #141414;
+    color: #FFFAFA;
+}
+.Section4{
+    background-color: black;
+    color: white;
+}
+.name{
+    position: absolute;
+    left: 43px;
+    font-size: 30px;
+}
+.school{
+    position: absolute;
+    top: 340px;
+    font-size: 20px;
+    left: 15px;
+
+}
+
+.one{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.two{
+    padding-bottom: 60px;
+}
+.pylogo{
+    position: relative;
+    left:43%;
+    top: 30px;
+}
+.jslogo{
+    position: relative;
+    left: 43%;
+    top: 30px;
+}
+.dblogo{
+    position: relative;
+    left: 43%;
+    top: 30px;
+}
+.pydata{
+    position: relative;
+    left: 120px;
+    
+    
+}
+.jsdata{
+    position: relative;
+    left: 160px;
+}
+.databasedata{
+    position: relative;
+    left: 160px;
+}
+.heading3{
+    position: relative;
+    left: 39%;
+    padding-top: 15px;
+}
+.heading2{
+    position: relative;
+    left: 32%;
+    padding-top: 30px;
+}
+.heading4{
+    position: relative;
+    left: 150px;
+    font-size: 20px;
+    top: 15px;
+}
+.heading5{
+    position: relative;
+    left: 30%;
+    font-size: 20px;
+}
+.heading6{
+    position: relative;
+    left: 32%;
+    padding-top:80px;
+}
+.heading8{
+    position: relative;
+    left:135px;
+    font-size: 20px;
+    top: 15px;
+}
+.heading9{
+    position: relative;
+    left: 130px;
+    font-size: 20px;
+    top: 15px;
+}
+.skills{
+    padding-bottom: 50px;
+}
+.projectdetail1{
+    position: relative;
+}
+.Component4{
+    padding-top: 50px;
+}
+
+.Component5{
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    display: flex;
+    
+}
+.repository{
+    position: relative;
+    left: 42%;
+}
+.projectdis{
+    position: relative;
+    left: 3%;
+}
+.three{
+    padding-left: 28px;
+}
+.socialicon{
+    position: relative;
+    left: 8%;
+}
+.socialicon:hover{
+            transform: scale(1.2);
+
+        }
+.repository:hover{
+    transform: scale(1.2);
+
+        }
+        .footer1{
+            color: white; position: relative; left: 35%; font: size 15px;
+
+        }
+        .footer2{
+            color: white; position: relative; left: 18%; font-size: 15px;
+
+        }
+
+      }
+     
+       
+    </style>
+</head>
+<body>
+        <nav>
+            <a href="#" class="logo">AMJWEBSITE</a>
+            <ul>
+                <li><a href="#Section1">Home</a></li>
+                <li><a href="#Section2">Skills</a></li>
+                <li><a href="#Section3">Projects</a></li>
+                <li><a href="#Section4">Contact</a></li>
+            </ul>
+        </nav>
+        <div  id="Section1" class="Section1">
+            <!--Mobile Navbar-->
+            <div class="topnav">
+                <a href="#home" class="active">AMJWEBSITE</a>
+               
+                <div id="myLinks">
+                  <a href="#Section1">Home</a>
+                  <a href="#Section2">Skills</a>
+                  <a href="#Section3">Projects</a>
+                  <a href="#Section4">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+              <!---Desktop and large screen device Navbar-->
+            
+                <div class="Component1">
+                    <img src="profile.jpg" alt="Profile Image" class='Profile'>
+                    <p class="name">Andyson</p>
+                    <p class="school">University of Zambia</p>
+                </div>
+                <div class="Component2">
+                    <h1 style="color:grey;">Biography</h1>
+                <p class="bio">I'm a 3rd year Computer Science student at the University of Zambia, an aspiring software developer and a tech enthusiast.</p>
+                <div class="data">
+                    <div>
+                        <h3 style="color: grey;">Interests:</h3>
+                            <li>Technology</li>
+                            <li>Call of Duty</li>
+                            <li>Music</li>
+                    </div>
+                   <div class="data2">
+                    <h3 style="color: grey;">Education:</h3>
+                        <li>BSc in Computer Science</li>
+                   </div>
+                </div>
+                </div>
+    
+            
+        </div>
+       
+        <div id="Section2"class="Section2">
+            <h1 style="color: grey;" class="heading3">Skills</h1>
+            <div class="skills">
+                <div class="one">
+                    <img class="pylogo" src="python.png" alt="python logo">
+                    <p class="heading4">Python</p>
+                    <p class="pydata">Django and Flask</p>
+                </div>
+                <div class="one">
+                    <img class="jslogo" src="javascript.png" alt="Javascript logo">
+                    <p class="heading8">JavaScript</p>
+                    <p class="jsdata">React</p>
+                </div>
+                <div class="one">
+                    <img class="dblogo" src="database.png" alt="database logo">
+                    <p class="heading9">Databases</p>
+                    <p class="databasedata">SQL</p>
+                </div>
+               </div>
+    
+        </div>
+        <div id="Section3" class="Section3">
+            <h1 style="color: grey;" class="heading6">Projects</h1>
+            <div class="Component4">
+                
+                <div class="two">
+                    <img class="projects" src="amjweather.jpg" alt="amj weather">
+                    <div class="projectdetail1">
+                        <a style="text-decoration: none; list-style-type: none;" href="https://amjweather.netlify.app/"><p class="heading5">AMJWEATHER</p></a>
+                        <p class="projectdis">A simple web app built in JavaScript that displays real time weather data.</p>
+                        <a href="https://github.com/ThetaleofAj"><img  class="repository" src="repository.png"></a>
+                    </div>
+                </div>
+                <div class="two">
+                    <img class="projects" src="amjmovie.jpg" alt="amj weather">
+                    <div class="projectdetail1">
+                     <a style="text-decoration: none; list-style-type: none;" href="https://amjmovie.netlify.app/"><p class="heading5">AMJMOVIE</p></a>
+                     <p class="projectdis"> A web app built in Python and JavaScript that shows some popular and upcoming movies. </p>
+                     <a  href="https://github.com/ThetaleofAj"><img class="repository" src="repository.png"></a>
+                    </div>
+                    
+                </div>
+                <div class="two">
+                    <img class="projects" src="amjmovie.jpg" alt="amj website">
+                    <div class="projectdetail1">
+                    <p class="heading5">AMJWEBSITE</p>
+                    <p class="projectdis">My portfolio website which you are currently on, built with html,css and a little JavaScript. </p>
+                    <a href="https://github.com/ThetaleofAj"><img class="repository" src="repository.png"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="Section4" class="Section4">
+            <h1 style="color: grey;" class="heading2">Contact</h1>
+            <div class="Component5">
+                <div class="three">
+                    <a a href=mailto:dash2000andy@gmail.com="HTML link"><img class="socialicon" src="envelope.png" alt="email icon"></a>
+                    <p>Email</p>
+                </div>
+                <div class="three">
+                    <a href="https://www.instagram.com/amj.coding/"><img class="socialicon" src="instagram.png" alt="instagram icon"></a>
+                    <p>Instagram</p>
+                </div>
+                <div class="three">
+                    <a href="https://www.linkedin.com/in/andyson-mupeta-339778200"><img class="socialicon" src="linkedin.png" alt="linkedin icon"></a>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="three"> 
+                    <a href="https://twitter.com/_andysonm_?s=08"><img class="socialicon" src="twitter.png" alt="twitter icon"></a>
+                    <p>Twitter</p>
+                </div>
+                
+                
+            </div>
+                
+            </div>
+</body>
+<footer style="background-color: #141414; padding-top: 80px; height: 100%; padding-bottom: 80px;">
+    <p class="footer1">© AMJWEBSITE</p>
+    <p class="footer2"> Icons used are from <a href=" https://icons8.com" style="text-decoration: white;">https://icons8.com</a></p>
+   
+</footer>
+
+</html>
